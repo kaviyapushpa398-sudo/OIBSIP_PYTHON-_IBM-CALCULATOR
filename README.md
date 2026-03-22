@@ -1,116 +1,142 @@
 # OIBSIP_PYTHON-_IBM-CALCULATOR
 
-🎙️ Python Voice Assistant
+# ⚖️ BMI Calculator (Python)
 
-A beginner-friendly Python Voice Assistant that listens to your voice commands and performs useful tasks like telling the time, searching the web, and fetching information from Wikipedia.
+A simple and interactive **BMI (Body Mass Index) Calculator** built using Python. This project allows users to calculate their BMI based on weight and height, and understand their health category instantly.
 
-This project demonstrates the power of speech recognition, text-to-speech, and automation using Python.
-
----
-
-🚀 Features
-
-- 🎤 Voice command recognition using microphone
-- 🔊 Text-to-speech response system
-- ⏰ Tells current time
-- 📅 Tells current date
-- 🌐 Performs Google web searches
-- 📖 Fetches and reads Wikipedia summaries
-- 🌍 Opens popular websites like YouTube, Google, and GitHub
-- 🔁 Continuous listening until "exit" or "stop"
-- ⚠️ Basic error handling for unrecognized speech and network issues
+It is designed for both beginners and advanced learners, with options to build a command-line version or a graphical user interface (GUI).
 
 ---
 
-🛠️ Technologies Used
+## 🚀 Features
 
-- Python
-- SpeechRecognition
-- pyttsx3
-- Wikipedia API
-- Webbrowser
-- Datetime
+### 🟢 Beginner Version (CLI)
 
----
+* Accepts user input for weight (kg) and height (meters)
+* Calculates BMI using standard formula
+* Displays BMI value with category:
 
-📦 Installation
+  * Underweight
+  * Normal weight
+  * Overweight
+  * Obese
+* Input validation and error handling
 
-Install the required libraries using pip:
+### 🔵 Advanced Version (GUI)
 
-pip install SpeechRecognition
-pip install pyttsx3
-pip install wikipedia
-pip install pyaudio
-
-If you face issues installing PyAudio:
-
-pip install pipwin
-pipwin install pyaudio
-
----
-
-▶️ How to Run
-
-1. Clone this repository or download the files
-2. Navigate to the project folder
-3. Run the Python file:
-
-python voice_assistant.py
-
-4. Speak your command when prompted 🎤
+* User-friendly interface using Tkinter or PyQt
+* Input fields for weight and height
+* Real-time BMI calculation
+* Displays BMI category visually
+* Stores user data for future reference
+* Shows historical BMI records
+* Graphical visualization of BMI trends
 
 ---
 
-🗣️ Example Commands
+## 🧠 BMI Formula
 
-Hello
-What is the time
-Tell me the date
-Search for artificial intelligence
-Search wikipedia for Python programming
-Open youtube
-Open google
-Exit
+```id="r8xq2n"
+BMI = weight (kg) / (height (m) ^ 2)
+```
 
 ---
 
-📁 Project Structure
+## 🛠️ Technologies Used
 
-Voice-Assistant-Project/
+* Python
+* Tkinter / PyQt (for GUI)
+* Matplotlib (for graphs)
+* File Handling / SQLite (for data storage)
+
+---
+
+## 📦 Installation
+
+Install required libraries:
+
+```id="h2k9sl"
+pip install matplotlib
+```
+
+*(Tkinter usually comes pre-installed with Python)*
+
+---
+
+## ▶️ How to Run
+
+### For Beginner Version:
+
+```id="g3k1pt"
+python bmi_calculator.py
+```
+
+### For GUI Version:
+
+```id="w6n2df"
+python bmi_gui.py
+```
+
+---
+
+## 🧪 Example Input
+
+```id="n4z8yu"
+Enter your weight (kg): 65
+Enter your height (m): 1.7
+```
+
+### Output:
+
+```id="y9p3mv"
+Your BMI is: 22.49
+Category: Normal weight
+```
+
+---
+
+## 📁 Project Structure
+
+```id="c8d4qx"
+BMI-Calculator/
 │
-├── voice_assistant.py
+├── bmi_calculator.py
+├── bmi_gui.py
+├── data.csv / database.db
 ├── README.md
 └── requirements.txt
+```
 
 ---
 
-🌟 Future Improvements
+## 🌟 Future Improvements
 
-- 🌦️ Weather updates using API
-- 📧 Send emails using voice
-- ⏰ Set reminders and alarms
-- 🤖 AI-based smart responses
-- 🖥️ GUI interface using Tkinter or PyQt
-
----
-
-💼 Internship Credit
-
-This project was developed as part of an internship at Oasis Infobyte, focusing on real-world Python applications and automation.
+* 📊 Advanced data visualization with interactive charts
+* ☁️ Cloud storage for user data
+* 📱 Convert into a mobile app
+* 🧠 Smart health suggestions based on BMI
+* 🔔 Notifications and health reminders
 
 ---
 
-🙌 Acknowledgment
+## 💼 Internship Credit
 
-Thanks to open-source libraries and the Python community for making development easier and more accessible.
-
----
-
-📌 Author
-
-Kaviya B
-Computer Science Student
+This project was developed as part of an internship at **Oasis Infobyte**, focusing on practical Python application development and user-centric design.
 
 ---
 
-⭐ If you like this project, don't forget to star the repository!
+## 🙌 Acknowledgment
+
+Inspired by real-world health tracking systems and built using Python’s powerful libraries.
+
+---
+
+## 📌 Author
+
+KAVIYA B
+COMPUTER SCIENCE STUDENT
+
+---
+
+⭐ If you like this project, don’t forget to star the repository!
+
